@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import GitHub from "../assets/icons/Github.png";
 import Linkedin from "../assets/icons/Linkedin.png";
 import Instagram from "../assets/icons/Instagram.png";
-import Google from "../assets/icons/Google.png";
+import Google from "../assets/icons/google.png";
 
 export default function IconContainer() {
   return (
