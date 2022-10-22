@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
-import GitHub from "../assets/icons/github.png";
-import Linkedin from "../assets/icons/linkedin.png";
-import Instagram from "../assets/icons/instagram.png";
-import Google from "../assets/icons/google.png";
+import GitHub from "../assets/icons/Github.png";
+import Linkedin from "../assets/icons/Linkedin.png";
+import Instagram from "../assets/icons/Instagram.png";
+import Google from "../assets/icons/Google.png";
 
 export default function IconContainer() {
   return (
