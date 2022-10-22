@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 import {
   AppBar,
   Box,
@@ -11,6 +12,7 @@ import {
   ListItem,
   ListItemText,
   Container,
+  Button
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
@@ -57,9 +59,9 @@ export default function TopBar() {
               <Drawer
                 PaperProps={{
                   sx: {
-                    backgroundColor: "red",
-                    borderTopLeftRadius: 12,
-                    borderBottomLeftRadius: 12,
+                    backgroundColor: "#E5E5E5",
+                    borderTopLeftRadius: 30,
+                    borderBottomLeftRadius: 30,
                   },
                 }}
                 open={open}
@@ -67,16 +69,12 @@ export default function TopBar() {
                 onClose={() => setOpen(false)}
               >
                 <div
-                  style={{ width: 200, borderTopLeftRadius: 8 }}
+                  style={{ width: 200, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center' }}
                   onClick={() => setOpen(false)}
                 >
                   {data.map((item, index) => {
                     return (
-                      <MenuItem component={Link} to={item.link} key={index}>
-                        <ListItem>
-                          <ListItemText>{item.name}</ListItemText>
-                        </ListItem>
-                      </MenuItem>
+                      <ButtonMobile component={Link} to={item.link} key={index}>{item.name}</ButtonMobile>
                     );
                   })}
                 </div>
@@ -92,19 +90,7 @@ export default function TopBar() {
               >
                 {data.map((item, index) => {
                   return (
-                    <MenuItem component={Link} to={item.link} key={index}>
-                      <ListItem>
-                        <ListItemText
-                          sx={{
-                            flexGrow: 1,
-                            color: "black",
-                            cursor: "pointer",
-                          }}
-                        >
-                          {item.name}
-                        </ListItemText>
-                      </ListItem>
-                    </MenuItem>
+                    <ButtonWeb component={Link} to={item.link} key={index}>{item.name}</ButtonWeb>
                   );
                 })}
               </Box>
@@ -115,3 +101,32 @@ export default function TopBar() {
     </Container>
   );
 }
+
+
+const ButtonWeb = styled(Button)({
+  width:'130px',
+  padding:'8px 20px',
+  textDecoration:'none',
+  textTransform:'uppercase',
+  fontWeight:700,
+  letterSpacing:'2px',
+  fontSize:'16px',
+  borderRadius:'20px',
+  boxShadow:'-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288)',
+})
+
+const ButtonMobile = styled(ListItem)({
+  width:'120px',
+  marginBlock:20,
+  padding:'8px 20px',
+  textDecoration:'none',
+  textTransform:'uppercase',
+  fontWeight:700,
+  letterSpacing:'2px',
+  color:'#445964',
+  fontSize:'12px',
+  textAlign:'center',
+  display:'inline-block',
+  borderRadius:'40px',
+  boxShadow:'-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288)',
+})
