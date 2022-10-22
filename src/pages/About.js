@@ -26,7 +26,7 @@ export default function About() {
                 </Box>
                 <Box sx={{marginBlock:5}}>
                 <Typography style={{fontFamily:'sans-serif', fontSize:32, fontWeight:900, color:'#445964'}}>JULIO RICKY SAPUTRO</Typography>
-                <Typography style={{ marginBlock:16}}>My name is Matheus Amauri de Jesus Campos 👋 I'm from Brazil, São José dos Campos/SP. Studying, 4th period, Systems Analysis and Development at the Fatec - São José dos Campos.</Typography>
+                <Typography style={{ marginBlock:16}}>My name is Julio Ricky Saputro 👋 I'm from Indonesia,I am a mobile / web developer with 1 year experience as FrontEnd Developer and React Native Developer. A person who is very thorough and efficient in doing his job. Have good verbal and verbal communication skills, as well as a cheerful personality.</Typography>
                 </Box>
                 <Box sx={{marginBlock:10}}>
                 <Typography style={{fontFamily:'sans-serif', fontSize:32, fontWeight:900, color:'#445964'}}><span style={{color:'#263138'}}>HARD</span> SKILLS</Typography>
@@ -43,7 +43,7 @@ export default function About() {
                 <img alt="" src={Profile} style={{width:183, height:200, borderRadius:'50%'}}/>
                 </Box>
                 <Typography style={{fontFamily:'sans-serif', fontSize:64, fontWeight:900, color:'#445964'}}><span style={{color:'#263138'}}>JULIO</span> RICKY SAPUTRO</Typography>
-                <Typography style={{width:'90vh', marginBlock:20}}>My name is Matheus Amauri de Jesus Campos 👋 I'm from Brazil, São José dos Campos/SP. Studying, 4th period, Systems Analysis and Development at the Fatec - São José dos Campos.</Typography>
+                <Typography style={{width:'90vh', marginBlock:20}}>My name is Julio Ricky Saputro 👋 I'm from Indonesia,I am a mobile / web developer with 1 year experience as FrontEnd Developer and React Native Developer. A person who is very thorough and efficient in doing his job. Have good verbal and verbal communication skills, as well as a cheerful personality.</Typography>
                 <Typography style={{fontFamily:'sans-serif', fontSize:64, fontWeight:900, color:'#445964'}}><span style={{color:'#263138'}}>HARD</span> SKILLS</Typography>
                 <CardSkills/>
                 </Box>
