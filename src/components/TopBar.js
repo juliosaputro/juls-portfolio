@@ -6,11 +6,9 @@ import {
   Toolbar,
   Typography,
   useMediaQuery,
-  MenuItem,
   IconButton,
   Drawer,
   ListItem,
-  ListItemText,
   Container,
   Button
 } from "@mui/material";
@@ -28,7 +26,7 @@ export default function TopBar() {
 
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Container component={"div"} maxWidth={"xl"} sx={{ flexGrow: 1 }}>

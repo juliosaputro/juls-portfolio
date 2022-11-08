@@ -9,7 +9,7 @@ import IconContainer from '../components/IconContainer';
 
 export default function Home() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <Container maxWidth={'xl'}>
@@ -25,9 +25,9 @@ export default function Home() {
         <Box style={{display:'flex', alignItems:'center', justifyContent:'center', marginTop:50}}>
           <ButtonPrimary/>
         </Box>
-        <Box sx={{left:50, bottom:0, height:100, position:'absolute', justifyContent:'center', alignItems:'center'}}>
             <IconContainer/>
-        </Box>
+        {/* <Box sx={{left:50, bottom:0, height:100, position:'absolute', justifyContent:'center', alignItems:'center'}}>
+        </Box> */}
            </Box>
 
           </Paper>
